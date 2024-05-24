@@ -8,6 +8,8 @@ vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
 -- adding keymap to open `:explore`
 vim.keymap.set('n', '<Leader>o', '<cmd>Oil<cr>', { desc = 'Open [P]roject [V]iew' })
 
+vim.keymap.set('n', '<Leader>xb', '<cmd>!./main.sh<cr>', { desc = 'e[X]ecute [B]ash' })
+
 -- Diagnostic keymaps
 vim.keymap.set('n', '[d', vim.diagnostic.goto_prev, { desc = 'Go to previous [D]iagnostic message' })
 vim.keymap.set('n', ']d', vim.diagnostic.goto_next, { desc = 'Go to next [D]iagnostic message' })
