@@ -9,6 +9,11 @@ vim.opt.relativenumber = true
 -- You can also add relative line numbers, to help with jumping.
 --  Experiment for yourself to see if you like it!
 
+vim.bo.tabstop = 2
+vim.bo.shiftwidth = 2
+vim.bo.expandtab = true
+vim.bo.softtabstop = 2
+
 -- Enable mouse mode, can be useful for resizing splits for example!
 vim.opt.mouse = 'a'
 
