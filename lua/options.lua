@@ -3,6 +3,11 @@
 -- NOTE: You can change these options as you wish!
 --  For more options, you can see `:help option-list`
 
+vim.opt.title = true
+vim.opt.autoindent = true
+vim.opt.smartindent = true
+vim.opt.wildignore:append { '*/node_modules/*' }
+
 -- Make line numbers default
 vim.opt.number = true
 vim.opt.relativenumber = true
