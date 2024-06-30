@@ -4,8 +4,6 @@
 --  For more options, you can see `:help option-list`
 
 vim.opt.title = true
-vim.opt.autoindent = true
-vim.opt.smartindent = true
 vim.opt.wildignore:append { '*/node_modules/*' }
 
 -- Make line numbers default
@@ -15,9 +13,11 @@ vim.opt.relativenumber = true
 --  Experiment for yourself to see if you like it!
 
 vim.bo.tabstop = 2
+vim.bo.softtabstop = 2
 vim.bo.shiftwidth = 2
 vim.bo.expandtab = true
-vim.bo.softtabstop = 2
+vim.opt.autoindent = true
+vim.opt.smartindent = true
 
 -- Enable mouse mode, can be useful for resizing splits for example!
 vim.opt.mouse = 'a'
