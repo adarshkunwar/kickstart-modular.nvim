@@ -18,6 +18,9 @@ require('lazy').setup({
   'neovim/nvim-lspconfig',
   'jose-elias-alvarez/null-ls.nvim',
   'MunifTanjim/prettier.nvim',
+  'kevinhwang91/nvim-ufo',
+  'm4xshen/autoclose.nvim',
+  'ThePrimeagen/vim-be-good',
 
   -- NOTE: Plugins can also be added by using a table,
   -- with the first argument being the link and the following
@@ -30,7 +33,17 @@ require('lazy').setup({
 
   -- "gc" to comment visual regions/lines
   { 'numToStr/Comment.nvim', opts = {} },
-
+  { 'nvim-tree/nvim-web-devicons', opts = {} },
+  {
+    'nvim-flutter/flutter-tools.nvim',
+    lazy = false,
+    dependencies = {
+      'nvim-lua/plenary.nvim',
+      'stevearc/dressing.nvim', -- optional for vim.ui.select
+    },
+    config = true,
+  },
+  { 'prichrd/netrw.nvim', opts = {} },
   -- modular approach: using `require 'path/name'` will
   -- include a plugin definition from file lua/path/name.lua
 
